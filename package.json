@@ -1,6 +1,6 @@
 {
   "name": "last-changed-files",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Use fs.stat() to record the last modification date of the file and import the list of changed files.",
   "author": "jun <slowpoke.cj@gmail.com>",
   "license": "MIT",
