@@ -27,6 +27,7 @@
     "mtime",
     "util"
   ],
+  "bundleDependencies": false,
   "dependencies": {
     "moment": "^2.26.0"
   },
