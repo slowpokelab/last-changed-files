@@ -21,10 +21,6 @@ lastChangedFiles(path)
   .catch((err) => {});
 ```
 
-## Dependencies
-
-- moment
-
 ## License
 
 Copyright © 2020 Jun.
