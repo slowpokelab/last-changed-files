@@ -1,0 +1,44 @@
+{
+  "name": "last-changed-files",
+  "version": "0.1.0",
+  "description": "Use fs.stat() to record the last modification date of the file and import the list of changed files.",
+  "author": "jun <slowpoke.cj@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/slowpokelab/last-changed-files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slowpokelab/last-changed-files.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "file",
+    "fs",
+    "path",
+    "stat",
+    "mtime",
+    "util"
+  ],
+  "dependencies": {
+    "moment": "^2.26.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true,
+    "useTabs": false,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "printWidth": 110
+  }
+}
