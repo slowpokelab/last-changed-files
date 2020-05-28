@@ -27,9 +27,6 @@
     "mtime",
     "util"
   ],
-  "dependencies": {
-    "moment": "^2.26.0"
-  },
   "devDependencies": {
     "prettier": "^2.0.5"
   },

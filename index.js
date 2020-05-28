@@ -8,7 +8,6 @@
  *
  */
 const { promises: fs, constants } = require('fs');
-const moment = require('moment');
 
 const LOG_FILE_FOLDER_NAME = '.log';
 const DEFAULT_LOG_FILE_NAME = 'mtime.json';
@@ -56,6 +55,8 @@ async function readJson(filePath) {
   return json;
 }
 
+const isSameDate = (a, b) => new Date(a).getTime() === new Date(b).getTime();
+
 /**
  * Get Last Changed Files
  * The default path for files recording the last modification date is "folderPath".
@@ -97,9 +98,7 @@ module.exports = async function ($folderPath, $logFile) {
           const target = manifest.stats.find((item) => item.name === name);
 
           if (target) {
-            let previous = moment(target.mtime);
-            let current = moment(mtime);
-            return !current.isSame(previous, 'second');
+            return !isSameDate(mtime, target.mtime);
           }
           return false;
         });
