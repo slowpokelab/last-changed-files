@@ -1,4 +1,4 @@
-# last-changed-files
+# last-changed-files [![npm version](https://badge.fury.io/js/last-changed-files.svg)](https://badge.fury.io/js/last-changed-files)
 
 ## Install
 
